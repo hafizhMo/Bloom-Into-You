@@ -11,6 +11,14 @@
 		FB29E82E2A95104000F4FD70 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB29E82D2A95104000F4FD70 /* ContentView.swift */; };
 		FB29E8302A95104100F4FD70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB29E82F2A95104100F4FD70 /* Assets.xcassets */; };
 		FB29E8332A95104100F4FD70 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB29E8322A95104100F4FD70 /* Preview Assets.xcassets */; };
+		FB29E83D2A95110B00F4FD70 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB29E83C2A95110B00F4FD70 /* Student.swift */; };
+		FB29E83F2A95117500F4FD70 /* StudentDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB29E83E2A95117500F4FD70 /* StudentDataStore.swift */; };
+		FB29E8472A9512B200F4FD70 /* ListStudentsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB29E8412A9512B200F4FD70 /* ListStudentsPresenter.swift */; };
+		FB29E84A2A9512B200F4FD70 /* ListStudentsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB29E8442A9512B200F4FD70 /* ListStudentsModels.swift */; };
+		FB29E84C2A9512B200F4FD70 /* ListStudentsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB29E8462A9512B200F4FD70 /* ListStudentsInteractor.swift */; };
+		FB29E8512A95130600F4FD70 /* ItemListStudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB29E8502A95130600F4FD70 /* ItemListStudent.swift */; };
+		FB29E8532A95140D00F4FD70 /* ListStudentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB29E8522A95140D00F4FD70 /* ListStudentsView.swift */; };
+		FB29E8552A95197300F4FD70 /* ListStudentsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB29E8542A95197300F4FD70 /* ListStudentsConfigurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,14 @@
 		FB29E82D2A95104000F4FD70 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FB29E82F2A95104100F4FD70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB29E8322A95104100F4FD70 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FB29E83C2A95110B00F4FD70 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		FB29E83E2A95117500F4FD70 /* StudentDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentDataStore.swift; sourceTree = "<group>"; };
+		FB29E8412A9512B200F4FD70 /* ListStudentsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStudentsPresenter.swift; sourceTree = "<group>"; };
+		FB29E8442A9512B200F4FD70 /* ListStudentsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStudentsModels.swift; sourceTree = "<group>"; };
+		FB29E8462A9512B200F4FD70 /* ListStudentsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStudentsInteractor.swift; sourceTree = "<group>"; };
+		FB29E8502A95130600F4FD70 /* ItemListStudent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListStudent.swift; sourceTree = "<group>"; };
+		FB29E8522A95140D00F4FD70 /* ListStudentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStudentsView.swift; sourceTree = "<group>"; };
+		FB29E8542A95197300F4FD70 /* ListStudentsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStudentsConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,7 @@
 				FB29E82B2A95104000F4FD70 /* Bloom_Into_YouApp.swift */,
 				FB29E82D2A95104000F4FD70 /* ContentView.swift */,
 				FB29E82F2A95104100F4FD70 /* Assets.xcassets */,
+				FB29E8392A9510CD00F4FD70 /* Domain */,
 				FB29E8312A95104100F4FD70 /* Preview Content */,
 			);
 			path = "Bloom Into You";
@@ -65,6 +82,53 @@
 				FB29E8322A95104100F4FD70 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FB29E8392A9510CD00F4FD70 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				FB29E83A2A9510EB00F4FD70 /* Models */,
+				FB29E83B2A9510F100F4FD70 /* Scenes */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		FB29E83A2A9510EB00F4FD70 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FB29E83C2A95110B00F4FD70 /* Student.swift */,
+				FB29E83E2A95117500F4FD70 /* StudentDataStore.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FB29E83B2A9510F100F4FD70 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				FB29E8402A95128000F4FD70 /* ListStudents */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		FB29E8402A95128000F4FD70 /* ListStudents */ = {
+			isa = PBXGroup;
+			children = (
+				FB29E8462A9512B200F4FD70 /* ListStudentsInteractor.swift */,
+				FB29E8442A9512B200F4FD70 /* ListStudentsModels.swift */,
+				FB29E8412A9512B200F4FD70 /* ListStudentsPresenter.swift */,
+				FB29E8522A95140D00F4FD70 /* ListStudentsView.swift */,
+				FB29E84D2A9512D200F4FD70 /* UIComponents */,
+				FB29E8542A95197300F4FD70 /* ListStudentsConfigurator.swift */,
+			);
+			path = ListStudents;
+			sourceTree = "<group>";
+		};
+		FB29E84D2A9512D200F4FD70 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				FB29E8502A95130600F4FD70 /* ItemListStudent.swift */,
+			);
+			path = UIComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +202,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB29E82E2A95104000F4FD70 /* ContentView.swift in Sources */,
+				FB29E83D2A95110B00F4FD70 /* Student.swift in Sources */,
 				FB29E82C2A95104000F4FD70 /* Bloom_Into_YouApp.swift in Sources */,
+				FB29E83F2A95117500F4FD70 /* StudentDataStore.swift in Sources */,
+				FB29E8552A95197300F4FD70 /* ListStudentsConfigurator.swift in Sources */,
+				FB29E8532A95140D00F4FD70 /* ListStudentsView.swift in Sources */,
+				FB29E8472A9512B200F4FD70 /* ListStudentsPresenter.swift in Sources */,
+				FB29E84A2A9512B200F4FD70 /* ListStudentsModels.swift in Sources */,
+				FB29E84C2A9512B200F4FD70 /* ListStudentsInteractor.swift in Sources */,
+				FB29E8512A95130600F4FD70 /* ItemListStudent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

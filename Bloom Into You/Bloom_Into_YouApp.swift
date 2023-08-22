@@ -9,9 +9,9 @@ import SwiftUI
 
 @main
 struct Bloom_Into_YouApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+  var body: some Scene {
+    WindowGroup {
+      ContentView()
     }
+  }
 }
